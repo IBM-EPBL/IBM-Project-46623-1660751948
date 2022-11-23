@@ -12,10 +12,10 @@ app=Flask(__name__)
 
 app.secret_key='a'
 
-conn= ibm_db.connect("DATABASE=bludb;HOSTNAME=b1bc1829-6f45-4cd4-bef4-10cf081900bf.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud;PORT=32304;SECURITY=SSL;SSLSeverCertificate=DigiCertGlobalRootCA.crt;UID=lwj62946;PWD=hE2LCZgTYX3Iln9H",'','')
+conn= ibm_db.connect("DATABASE=;HOSTNAME=;PORT=;SECURITY=;SSLSeverCertificate=;UID=;PWD=",'','')
 
 configuration = sib_api_v3_sdk.Configuration()
-configuration.api_key['api-key'] = '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'
+configuration.api_key['api-key'] = ''
 api_instance = sib_api_v3_sdk.TransactionalEmailsApi(sib_api_v3_sdk.ApiClient(configuration))
     
 
